@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Raycast
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":282.0,"y":29.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"01523125-d7f7-461e-b6eb-27a03db41d58","$version":"A","$type":"Unity.VisualScripting.Update","$id":"9"},{"chainable":false,"parameterNames":["index"],"member":{"name":"GetTouch","parameterTypes":["System.Int32"],"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{"%index":{"$content":0,"$type":"System.Int32"}},"position":{"x":9.0,"y":55.0},"guid":"c5d7ec5f-4373-47ff-bd00-3dcdc1b8af81","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Touch","targetTypeName":"UnityEngine.Touch","$version":"A"},"defaultValues":{},"position":{"x":204.0,"y":125.0},"guid":"43bca193-1885-4b1e-8adf-72090b6d505e","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"15"},{"chainable":false,"parameterNames":["screenPoint","hitResults","trackableTypes"],"member":{"name":"Raycast","parameterTypes":["UnityEngine.Vector2","System.Collections.Generic.List`1[[UnityEngine.XR.ARFoundation.ARRaycastHit,
+      Unity.XR.ARFoundation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","UnityEngine.XR.ARSubsystems.TrackableType"],"targetType":"UnityEngine.XR.ARFoundation.ARRaycastManager","targetTypeName":"UnityEngine.XR.ARFoundation.ARRaycastManager","$version":"A"},"defaultValues":{"target":null,"%screenPoint":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"%trackableTypes":{"$content":"PlaneWithinPolygon,PlaneWithinBounds,PlaneWithinInfinity,PlaneEstimated,Planes,FeaturePoint,Image,Face,All,Depth,AllTypes","$type":"UnityEngine.XR.ARSubsystems.TrackableType"}},"position":{"x":418.0,"y":-37.0},"guid":"cd1f7a92-c1f9-40e6-8113-69ca9e25c98a","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"5dcdf075-ae48-48be-8766-6392779dfe3b","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"exit","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"5ef94fe6-6f09-41d5-b958-a5bdddc550ac","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"target","guid":"f18a4fdb-52d9-48e4-9c6e-06d5d3353925","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"18"},"destinationKey":"%screenPoint","guid":"e4945874-8601-4656-882e-4d48e03c5931","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
